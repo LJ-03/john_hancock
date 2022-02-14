@@ -23,4 +23,13 @@ document.addEventListener('DOMContentLoaded', function(){
     window.addEventListener("resize", resizeCanvas, true);
     resizeCanvas();
   }
+  
+    function signatureClear(){
+      var canvas = document.getElementById("JohnHancock-canvas");
+      var context = canvas.getContext("2d");
+      context.clearRect(0, 0, canvas.width, canvas.height);
+    }
+    
 }, false)
+
+
